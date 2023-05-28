@@ -8,7 +8,7 @@ Use this script at your own risk!
 
 ## How it works?
 
-It just create simlinks between .themes and .config folder with assets and GTK 4.0 theme CSS files.
+It creates simlinks between /usr/share/themes and .config folder with assets and GTK 4.0 theme CSS files and applies chosen theme.
 
 ## Requirements
 
@@ -45,4 +45,4 @@ Run script with --reset parameter:
 
 ## Credits
 
-Thanks to [OdzioM](https://github.com/odziom91) for this nice script.
+Base script is from [libadwaita-theme-changer](https://github.com/odziom91/libadwaita-theme-changer) repo. Thanks to [OdzioM](https://github.com/odziom91) for that.
