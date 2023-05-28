@@ -13,11 +13,14 @@ if __name__ == "__main__":
         current_theme = sp.check_output("gsettings get org.gnome.desktop.wm.preferences theme", shell=True, universal_newlines=True)
 
         if "--reset" in sys.argv:
-            print(f'\n***\nResetting theme to default!\n***\n')
+            print(f'==> Resetting theme to Adwaita\n')
             sp.run(["rm", f'{home_dir}{config_dir}/gtk-4.0/gtk.css'])
             sp.run(["rm", f'{home_dir}{config_dir}/gtk-4.0/gtk-dark.css'])
             sp.run(["rm", f'{home_dir}{config_dir}/gtk-4.0/assets'])
             sp.run(["rm", f'{home_dir}{config_dir}/assets'])
+            sp.run(["gsettings", "set", "org.gnome.desktop.wm.preferences", "theme", "Adwaita"])
+            sp.run(["gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", "Adwaita"])
+            sp.run(["gsettings", "set", "org.gnome.shell.extensions.user-theme", "name", "Adwaita"])
         else:
             all_themes = str(sp.run(["ls", f'{themes_dir}/'], stdout=sp.PIPE).stdout.decode("UTF-8")).split()        
             print(f"======== This script changes gtk4 theme from the installed themes in {themes_dir} =========")
