@@ -46,3 +46,4 @@ Run script with --reset parameter:
 ## Credits
 
 Base script is from [libadwaita-theme-changer](https://github.com/odziom91/libadwaita-theme-changer) repo. Thanks to [OdzioM](https://github.com/odziom91) for that.
+
