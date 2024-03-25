@@ -47,6 +47,7 @@ if __name__ == "__main__":
                     sp.run(["gsettings", "set", "org.gnome.desktop.wm.preferences", "theme", f'{chosen_theme}'])
                     sp.run(["gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", f'{chosen_theme}'])
                     sp.run(["gsettings", "set", "org.gnome.shell.extensions.user-theme", "name", f'{chosen_theme}'])
+                    sp.run(["sudo", "flatpak", "override", f'--env=GTK_THEME={chk_theme}'])
                     print("Done.")
     except ValueError as e:
         print("Incorrect value! Please try again!")
