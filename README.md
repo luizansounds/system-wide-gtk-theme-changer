@@ -1,6 +1,6 @@
 # gtk4-theme-changer
 
-Theme changer for gtk4 including Libadwaita
+Theme changer for gtk4, including Libadwaita, and flatpaks
 
 ## Disclaimer
 
@@ -20,7 +20,7 @@ In downloaded theme directory should be ``gtk-4.0`` and ``assets`` directories.
 1. Download Python script from git:
 
 ```bash
-git clone https://github.com/ersanmaz/gtk4-theme-changer.git
+git clone https://github.com/ersanmaz/gtk4-theme-changer.git](https://github.com/luizansounds/system-wide-gtk-theme-changer)
 ```
 
 1. Add run permissions to file:
@@ -46,4 +46,5 @@ Run script with --reset parameter:
 ## Credits
 
 Base script is from [libadwaita-theme-changer](https://github.com/odziom91/libadwaita-theme-changer) repo. Thanks to [OdzioM](https://github.com/odziom91) for that.
+Also Thanks to [ersanmaz](https://github.com/ersanmaz) for providing the Fork that Changes the gnome themes in [gtk4-theme-changer](https://github.com/ersanmaz/gtk4-theme-changer)
 
