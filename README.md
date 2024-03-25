@@ -4,7 +4,7 @@ Theme changer for gtk4, including Libadwaita, and flatpaks
 
 ## Disclaimer
 
-Use this script at your own risk!
+Use this script at your own risk! it requires sudo to change themes for flatpaks
 
 ## How it works?
 
