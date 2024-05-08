@@ -9,7 +9,7 @@ if __name__ == "__main__":
     try:
         home_dir = os.getenv('HOME')
         config_dir = "/.config"
-        themes_dir = "/.themes"
+        themes_dir = f'{home_dir}/.themes'
         current_theme = sp.check_output("gsettings get org.gnome.desktop.wm.preferences theme", shell=True, universal_newlines=True)
 
         if "--reset" in sys.argv:
@@ -48,7 +48,7 @@ if __name__ == "__main__":
                     sp.run(["gsettings", "set", "org.gnome.desktop.wm.preferences", "theme", f'{chosen_theme}'])
                     sp.run(["gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", f'{chosen_theme}'])
                     sp.run(["gsettings", "set", "org.gnome.shell.extensions.user-theme", "name", f'{chosen_theme}'])
-                    sp.run(["sudo", "flatpak", "override", f'--env=GTK_THEME={chk_theme}'])
+                    sp.run(["sudo", "flatpak", "override", f'--env=GTK_THEME={chosen_theme}'])
                     print("Done.")
     except ValueError as e:
         print("Incorrect value! Please try again!")
