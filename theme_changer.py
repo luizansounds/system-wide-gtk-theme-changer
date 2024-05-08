@@ -9,7 +9,7 @@ if __name__ == "__main__":
     try:
         home_dir = os.getenv('HOME')
         config_dir = "/.config"
-        themes_dir = "/usr/share/themes"
+        themes_dir = "/.themes"
         current_theme = sp.check_output("gsettings get org.gnome.desktop.wm.preferences theme", shell=True, universal_newlines=True)
 
         if "--reset" in sys.argv:
