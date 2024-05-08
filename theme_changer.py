@@ -41,6 +41,7 @@ if __name__ == "__main__":
                     sp.run(["rm", f'{home_dir}{config_dir}/gtk-4.0/gtk-dark.css'])
                     sp.run(["rm", f'{home_dir}{config_dir}/assets'])
                     print(f"Installing {chosen_theme} theme...")
+                    sp.run(["sudo", "flatpak", "override", f'--filesystem={home_dir}/.themes'])
                     sp.run(["ln", "-s", f'{themes_dir}/{chosen_theme}/gtk-4.0/gtk.css', f'{home_dir}{config_dir}/gtk-4.0/gtk.css'])
                     sp.run(["ln", "-s", f'{themes_dir}/{chosen_theme}/gtk-4.0/gtk-dark.css', f'{home_dir}{config_dir}/gtk-4.0/gtk-dark.css'])
                     sp.run(["ln", "-s", f'{themes_dir}/{chosen_theme}/assets', f'{home_dir}{config_dir}/assets'])                
