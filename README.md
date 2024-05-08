@@ -20,7 +20,7 @@ In downloaded theme directory should be ``gtk-4.0`` and ``assets`` directories.
 1. Download Python script from git:
 
 ```bash
-git clone https://github.com/ersanmaz/gtk4-theme-changer.git](https://github.com/luizansounds/system-wide-gtk-theme-changer)
+git clone https://github.com/luizansounds/system-wide-gtk-theme-changer
 ```
 
 1. Add run permissions to file:
@@ -41,6 +41,12 @@ Run script with --reset parameter:
 
 ```bash
 ./theme_changer.py --reset
+```
+
+## single line install for ~/.local/bin folder
+
+```bash
+wget -P ~/.local/bin https://raw.githubusercontent.com/luizansounds/system-wide-gtk-theme-changer/main/theme_changer.py && chmod +x ~/.local/bin/theme_changer.py
 ```
 
 ## Credits
