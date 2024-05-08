@@ -8,7 +8,7 @@ Use this script at your own risk! it requires sudo to change themes for flatpaks
 
 ## How it works?
 
-It creates simlinks between /usr/share/themes and .config folder with assets and GTK 4.0 theme CSS files and applies chosen theme.
+It creates simlinks between /usr/share/themes and .config folder with assets and GTK 4.0 theme CSS files and applies chosen theme, Also it enables the ~/.themes folder for flatpaks, them uses override theme to enable the selected theme.
 
 ## Requirements
 
